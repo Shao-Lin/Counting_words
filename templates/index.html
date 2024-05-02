@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Word Count</title>
+</head>
+<body>
+
+<h2>Counting words</h2>
+<div class="box">
+    <table>
+        <tr>
+            <th>Word</th>
+            <th>Count</th>
+        </tr>
+
+        {% for word, count in word_count.items() %}
+        <tr>
+            <td>{{ word }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div class="gradient">
+<div class="text">
+<h3>Animation</h3>
+Creating characters and animations
+In this release, the built-in Unreal Engine animation toolkit has been significantly updated, allowing you to quickly, easily and with pleasure create characters and author animations directly in the engine, without a tedious and time-consuming trip to external applications.
+Thanks to the new experimental modular control feature, you can create animation installations from understandable modular parts instead of complex detailed graphs, while automatic retargeting makes it easier to get excellent results when reusing animations of two-legged characters. Extensions for the skeleton editor and a set of new deformer features are also available, which make the Deformer graph more accessible.
+As for animation development, we have focused on making our tools more intuitive and reliable, as well as optimizing workflows. This includes new experimental gizmos; redesigned animation details; updates and enhancements to the constraint system; and a new multi-level control feature that makes it much easier to add animations on top of animated clips.
+Meanwhile, Sequencer, the Unreal Engine's nonlinear animation editor, is undergoing significant changes, thanks to better readability and improved usability in several aspects of the sequencer tree. Among other new features in this release, we have also added the ability to create keyframe scripts, which opens up additional possibilities for creating custom animation tools.
+<h3>Animated gameplay</h3>
+Motion Matching, previously introduced as an experimental feature, is now ready for production: In fact, it has been combat tested in Fortnite Battle Royale and is available on all platforms, from mobile to console, running on all 100 characters plus NPCs.
+Motion Matching is a next-generation extensible framework for animation functions. Instead of using complex logic to select and transition animation fragments during execution, it is based on searching through a relatively large database of captured animations, using current information about the movement of the character in the game as a key.
+
+As for the gameplay, we have added Choosers, a popular tool that allows you to use the game context to select animations. The system can either use variables to inform the selection, or set variables based on these choices to provide feedback to the logic of the gameplay.
+Rendering
+Nanite
+Nanite— the virtualized micropolygon geometric system from UE5, continues to receive improvements, starting with an experimental new tessellation feature that allows you to add small details such as cracks and irregularities during rendering without changing the original grid.
+Moreover, the addition of variable Speed shading (VRS) software using Nanite computing materials provides a significant performance boost. There is also support for workflows with a spline grid — great, for example, for creating roads on landscapes. In addition, the new option to disable UV interpolation allows you to use vertex animated textures to animate the displacement of the position in the world; in fact, this means that the AnimToTexture plugin now works with Nanite geometry.
+<h3>Movie rendering schedule</h3>
+For those who create linear content, Unreal Engine 5.4 introduces a major update to the movie rendering queue as an experimental feature. The new node-based architecture, dubbed Movie Render Graph (MRG), allows users to customize graphics to render a single frame or design them to scale in complex multi-frame workflows for large teams of artists. Graphs are convenient for the pipeline, with Python hooks for studios to create tools and automation.
+Artificial intelligence and machine learning
+Neural network engine
+In Unreal Engine 5.4, the Neural Network Engine (NNE) is transitioning from an experimental state to a beta version. With support for both embedded and runtime applications, NNE allows developers to download and efficiently run their pre-trained neural network models.
+
+Use cases include tools, animation, rendering, and physics, each with different needs in terms of platform and model support. NNE addresses these disparate needs by providing a common API that makes it easy to replace backend parts as needed. We have also provided extension capabilities that allow third-party developers to implement the NNE interface in the plugin.
+authentication, passed production testing on AWS at Epic, and also comes with deployment instructions for Azure.
+</div>
+    </div>
+</body>
+</html>

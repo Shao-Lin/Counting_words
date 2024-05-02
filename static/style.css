@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+.box{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #4158d0 0%, #c850c0 40%, #ffcc70 90%);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: #f2f2f2;
+    font:20px/1.5em sans-serif;
+    font-weight:bold;
+}
+td{
+   font:16px/1.5em sans-serif;
+}
+td:hover{
+    color: white;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    align-items:center;
+}
+h2{
+    text-align:center;
+     font-size: 90px;
+  font-weight: 600;
+  font-family: 'Niconne', cursive;
+   text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(179, 147, 211, 0.15),
+               4px 6px 4px rgba(179, 147, 211, 0.2),
+               5px 8px 4px rgba(179, 147, 211, 0.25);
+
+}
+.text{
+    font: 14px/1.5em sans-serif;
+
+    margin-left:30px;
+    margin-right:50px;
+}
+.gradient{
+    background: linear-gradient(0deg, #00f260, #0575e6);
+}
